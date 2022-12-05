@@ -1,0 +1,6 @@
+mango
+99
+orange
+27
+apple
+27
