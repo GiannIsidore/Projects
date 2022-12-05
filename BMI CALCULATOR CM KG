@@ -1,0 +1,19 @@
+height = float(input("Height/cm: "))
+weight = float(input("Weight/kg: "))
+bmi = weight / (height/100)**2
+if bmi >= 18.5:
+				x = "Normal."
+				if bmi <= 24.9:
+					x = "Normal"
+				elif bmi >= 25:
+					x = "Overweight."
+				elif bmi <= 29.9:
+					x = "Overweight."
+else:
+	x = "Underweight"
+if bmi >= 30:
+	if bmi <= 40:
+		x = "Obesity."
+	else:
+		x = "Obesity."
+print("Your BMI is", (format(bmi, '.2f')),"and it is",x)
