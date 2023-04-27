@@ -1,0 +1,44 @@
+import java.util.Scanner;
+public class whileLoops {
+
+    public static void main(String[] args){
+        String userName = "Giann";
+        String password = "Cine";
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter Username");
+        String inputUsername = input.next();
+        System.out.println("Enter password");
+        String inputPassword = input.next();
+
+
+
+
+        int count = 0;
+
+//create while loop, set loop continuation condition to count < 3
+        while (count <= 2) {
+
+            if ((!inputUsername.equals(userName)) || (!inputPassword.equals(password))) {
+                System.out.println("Wrong entry. try again: Enter username");
+                inputUsername = input.next();
+
+                System.out.println("Enter password");
+                inputPassword = input.next();
+            }
+            else {
+                System.out.println("You are now logged in");
+                break;
+            }
+
+            count++;
+        }
+
+        if (count > 2)
+            System.out.println("You have entered wrong three times. Please try again in a few hours");
+
+        System.exit(0);
+
+    }
+}
