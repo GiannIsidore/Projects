@@ -1,0 +1,42 @@
+import java.util.Scanner;
+public class loooops {
+    public static void main(String args[]) {
+        String userName = "Giann";
+        String password = "Cine";
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter UN");
+        String inputUN = input.next();
+        System.out.println("Enter Pass");
+        String inputPss = input.next();
+
+        int tryy = 0;
+
+        for ( int tries = 3 ; tryy <= tries ; tryy++){
+
+            if ((!inputUN.equals(userName)) || (!inputPss.equals(inputPss))) {
+                System.out.println(tryy);
+                System.out.println("ENTER AGAIN");
+                System.out.println("UN");
+                inputUN = input.next();
+                System.out.println("Pass");
+                inputPss = input.next();
+
+
+
+            }
+
+        }
+        if((inputUN.equals(userName)) && (inputPss.equals(inputPss))){
+            System.out.println("LOGED IN");
+        }
+
+        else if(tryy > 2){
+            System.out.println("GIVE ME A BREAK");
+
+        }
+        System.exit(0);
+
+    }
+}
