@@ -1,0 +1,16 @@
+public class patterns {
+    public static void main (String args[]){
+        for(int rowz = 5; rowz>=1; rowz--){
+            for (int colums = 1; colums<=rowz; colums++){
+                System.out.print(colums);
+            }
+            System.out.println("");
+        }
+        for(int rowz = 1; rowz<=5; rowz++){
+            for (int colums = 1; colums<=rowz; colums++){
+                System.out.print(colums);
+            }
+            System.out.println("");
+        }
+    }
+}
